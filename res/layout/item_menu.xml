@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/product"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/quantityText"
+        android:layout_toEndOf="@+id/quantityText"
+        android:id="@+id/quantity" />
+
+    <TextView
+        android:text="Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quantityText"
+        android:layout_below="@+id/product"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:layout_alignBaseline="@+id/product"
+        android:layout_alignBottom="@+id/product"
+        android:layout_toEndOf="@+id/product"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantity"
+        android:layout_alignParentStart="true"
+        android:id="@+id/addButton" />
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quantity"
+        android:layout_toEndOf="@+id/addButton"
+        android:id="@+id/subtractButton" />
+
+    <TextView
+        android:text="# in cart:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/price"
+        android:layout_toEndOf="@+id/subtractButton"
+        android:id="@+id/cartQuantityText" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cartQuantityText"
+        android:layout_toEndOf="@+id/cartQuantityText"
+        android:id="@+id/cartQuantity" />
+</RelativeLayout>

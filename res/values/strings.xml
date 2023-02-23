@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">bizky</string>
+    <string name="title_activity_insert">InsertActivity</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/invoice"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"/>
+
+    <TextView
+        android:text="Invoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/invoice"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_alignBottom="@+id/price"
+        android:layout_alignParentStart="true"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:singleLine="false" />
+
+    <TextView
+        android:text="Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_alignBaseline="@+id/price"
+        android:layout_alignBottom="@+id/price"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"/>
+
+</RelativeLayout>
