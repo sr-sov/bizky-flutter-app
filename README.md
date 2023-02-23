@@ -1,7 +1,3 @@
-# bizky-flutter-app
-Android App developed using Flutter
-
-
 # Bizky 
 is an online Android application, developed
 using Google’s Dart programming language with the Flutter
